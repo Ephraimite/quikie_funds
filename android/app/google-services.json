@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1051286920373",
+    "project_id": "quikie-funds",
+    "storage_bucket": "quikie-funds.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051286920373:android:aa36b5fc034656056a32fc",
+        "android_client_info": {
+          "package_name": "com.example.quikie_funds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051286920373-7p95tp0hk5isfdj3am12vr5r1l8vb21d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6R7sttlD_hSqpdviQfGYGlxETyCltNSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051286920373-7p95tp0hk5isfdj3am12vr5r1l8vb21d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

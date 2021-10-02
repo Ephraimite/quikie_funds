@@ -4,7 +4,6 @@ import 'package:quikie_funds/model/users.dart';
 import 'package:quikie_funds/states/auth_state.dart';
 
 class HomeScreen extends StatefulWidget {
-
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -34,11 +33,11 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Text('Hello, ${_usersModel.firstName}'),
-                  ],
-                ),
+                Text('Hello, ${_usersModel.firstName}'),
+                SizedBox(height: 20),
+                Text('Available balance', TextSty),
+                Text('₦ 5,000.00'),
+
               ],
             ),
           ),
