@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:quikie_funds/screens/bottom_navigation.dart';
 import 'package:quikie_funds/screens/home.dart';
 import 'package:quikie_funds/screens/splash.dart';
 import 'package:quikie_funds/states/auth_state.dart';
@@ -17,7 +18,7 @@ void main() async {
 
       ],
       child: MaterialApp(
-        home: HomeScreen(),
+        home: SplashScreen(),
         theme: ThemeData(
           primaryColor: kCOLOR_PRIMARY,
         ),

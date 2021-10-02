@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:quikie_funds/screens/settings.dart';
+import 'package:quikie_funds/screens/support.dart';
 
 import '../constants.dart';
 import 'home.dart';
@@ -16,6 +18,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
 
     final bottomNavigationScreens =[
       HomeScreen(),
+      SettingsScreen(),
+      SupportScreen(),
     ];
 
     void _onItemTap(int index){
