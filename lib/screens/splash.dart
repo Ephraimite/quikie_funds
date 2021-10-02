@@ -4,6 +4,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:quikie_funds/constants.dart';
+import 'package:quikie_funds/screens/bottom_navigation.dart';
 import 'package:quikie_funds/screens/login.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -50,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void showSplash() {
     Timer(Duration(seconds: 6), () async {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => LoginScreen()));
+          context, MaterialPageRoute(builder: (context) => BottomNavigation()));
     });
   }
 }

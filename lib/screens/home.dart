@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:quikie_funds/components/reuseable_grid_items.dart';
 import 'package:quikie_funds/model/users.dart';
 import 'package:quikie_funds/states/auth_state.dart';
 
@@ -33,10 +34,23 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Hello, ${_usersModel.firstName}'),
+                Text('Hello, ${_usersModel.firstName}', style: TextStyle(
+                    fontSize: 14.0,
+                    color: Colors.white
+                ),),
                 SizedBox(height: 20),
-                Text('Available balance', TextSty),
-                Text('₦ 5,000.00'),
+                Center(
+                  child: Text('Available balance', style: TextStyle(
+                    fontSize: 14.0,
+                    color: Colors.white
+                  ),),
+                ),
+                Center(
+                  child: Text('₦ 5,000.00', style: TextStyle(
+                      fontSize: 25.0,
+                      color: Colors.white
+                  ),),
+                ),
 
               ],
             ),
@@ -50,7 +64,22 @@ class _HomeScreenState extends State<HomeScreen> {
                     topRight: Radius.circular(20.0),
                     topLeft: Radius.circular(20.0)),
               ),
-              child: Container(),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: GridView(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
+                  children: [
+                    GridItems(icon: Icons.history, text: 'Transaction History'),
+                    GridItems(icon: Icons.send, text: 'Send Money'),
+                    GridItems(icon: Icons.lightbulb, text: 'Electricity'),
+                    GridItems(icon: Icons.money, text: 'Apply for Loans'),
+                    GridItems(icon: Icons.money, text: 'Buy Airtime'),
+                    GridItems(icon: Icons.account_balance_wallet, text: 'cashout'),
+
+                  ],
+                ),
+              ),
             ),
           ),
         ],

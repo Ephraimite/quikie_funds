@@ -9,6 +9,7 @@ import 'package:quikie_funds/screens/sign_up.dart';
 import 'package:quikie_funds/states/auth_state.dart';
 
 import '../constants.dart';
+import 'bottom_navigation.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -140,7 +141,7 @@ class _SplashScreenState extends State<LoginScreen> {
       if(await authenticationProvider.loginUser(email, password)){
         final progressBar = ProgressHUD.of(context);
         progressBar!.dismiss();
-        Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+        Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavigation()));
       }else{
         Fluttertoast.showToast(
             msg: "An error occured pls try again",
